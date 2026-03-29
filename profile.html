@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Setup</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Set up your Profile!!</h2>
+    <form action="signup_buyer.php" method="POST">
+      <!-- Username -->
+      <input type="text" name="username" placeholder="USERNAME" required>
+
+      <!-- First and Last Name -->
+      <div class="row">
+        <input type="text" name="first_name" placeholder="FIRST NAME" required>
+        <input type="text" name="last_name" placeholder="LAST NAME" required>
+      </div>
+
+      <!-- Email -->
+      <input type="email" name="email" placeholder="EMAIL" required>
+
+      <!-- Address -->
+      <input type="text" name="address" placeholder="ADDRESS" required>
+
+      <!-- City and State -->
+      <div class="row">
+        <input type="text" name="city" placeholder="CITY" required>
+        <input type="text" name="state" placeholder="STATE" required>
+      </div>
+
+      <!-- Contact Info -->
+      <input type="text" name="contact" placeholder="CONTACT INFO" required>
+
+      <!-- Password -->
+      <input type="password" name="password" placeholder="PASSWORD" required>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="reset">CANCEL</button>
+        <button type="submit">SAVE</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

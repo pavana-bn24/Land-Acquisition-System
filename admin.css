@@ -1,0 +1,51 @@
+/* Admin Login Styling */
+.admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.admin-login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.admin-login-box h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.admin-login-box input[type="text"],
+.admin-login-box input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.admin-login-box button {
+  background-color: #1e40af;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-login-box button:hover {
+  background-color: #2563eb;
+}

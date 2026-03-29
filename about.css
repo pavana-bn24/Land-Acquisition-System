@@ -1,0 +1,259 @@
+/* Reset and Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  scroll-behavior: smooth;
+  color: #1f2937;
+}
+
+header {
+  background: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #facc15;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+.banner {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: zoomSlow 20s infinite alternate, driftLeftRight 30s ease-in-out infinite;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 6px #000;
+  max-width: 90%;
+  animation: fadeInUp 1.5s ease;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.mission {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.mission h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.mission-content img {
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 10px;
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+.mission-content p {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.why-choose {
+  background: #e0f2fe;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.why-choose h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1e40af;
+}
+
+.why-choose .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 680px;
+  margin: auto;
+  font-size: 12px;
+}
+
+.community-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.community-section h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.community-members {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.member img:hover {
+  transform: scale(1.05);
+}
+
+.cta {
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-text h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cta .btn {
+  background: #facc15;
+  color: #111827;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.cta .btn:hover {
+  background-color: #fde047;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer .social-icons img {
+  width: 28px;
+  margin: 0 6px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.15);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomSlow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes driftLeftRight {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}

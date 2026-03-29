@@ -1,0 +1,199 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #004d40;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #ffcc00;
+  }
+  
+  /* Main Title */
+  .dashboard-title {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    color: #00695c;
+  }
+  
+  /* Plot Layout Image */
+  .plot-layout {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .plot-layout img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Plot Status Section */
+  .plot-status {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1000px;
+  }
+  
+  .plot-status h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #004d40;
+  }
+  
+  .plots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .plots button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    transition: transform 0.2s ease;
+  }
+  
+  .plots button:hover {
+    transform: scale(1.05);
+  }
+  
+  .available {
+    background-color: #4caf50;
+  }
+  
+  .reserved {
+    background-color: #ff9800;
+  }
+  
+  .sold {
+    background-color: #f44336;
+  }
+  
+  /* Chart Sheet & Legend */
+  .chart-sheet {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e0f2f1;
+    margin: 2rem auto;
+    max-width: 1000px;
+    border-radius: 10px;
+  }
+  
+  .chart-sheet h2 {
+    margin-bottom: 1.5rem;
+    color: #00695c;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  
+  .status-box,
+  .legend-box {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .status-box.available {
+    background-color: #4caf50;
+  }
+  
+  .status-box.reserved {
+    background-color: #ff9800;
+  }
+  
+  .status-box.sold {
+    background-color: #f44336;
+  }
+  
+  .legend-box.size1 {
+    background-color: #7e57c2;
+  }
+  
+  .legend-box.size2 {
+    background-color: #26a69a;
+  }
+  
+  .legend-box.size3 {
+    background-color: #ff7043;
+  }
+  
+  .legend-box.size4 {
+    background-color: #42a5f5;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
